@@ -27,7 +27,7 @@ export default function Posts () {
 
                 <tbody>
                     {posts.map(post => (
-                        <tr>
+                        <tr key={post.id}>
                             <td>{post.id}</td>
                             <td>{post.name}</td>
                             <td>
